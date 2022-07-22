@@ -1,7 +1,14 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+import Navigation from './routes/Navigation';
 
 const App = () => {
-  return <div>Portfolio</div>;
+  return (
+    <BrowserRouter>
+      <Navigation />
+    </BrowserRouter>
+  );
 };
 
 export default App;
